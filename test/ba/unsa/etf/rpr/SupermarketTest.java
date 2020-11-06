@@ -36,7 +36,7 @@ class SupermarketTest {
     @Test
     void izbaciArtikKojiNePostoji() {
         Supermarket k = new Supermarket();
-        Artikl a = new Artikl("Mobitel", 1000, "11");
+        Artikl a = new Artikl("Mob", 1000, "11");
         k.dodajArtikl(a);
         assertNull(k.izbaciArtiklSaKodom("12"));
     }
